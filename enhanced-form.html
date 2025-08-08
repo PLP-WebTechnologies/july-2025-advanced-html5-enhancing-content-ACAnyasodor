@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Internship application form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+
+    header, footer {
+      text-align: center;
+      background-color: #004aad;
+      color: white;
+      padding: 10px;
+      border-radius: 5px;
+    }
+
+    main section {
+      background-color: white;
+      padding: 15px;
+      margin: 15px 0;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      color: #004aad;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      margin-top: 10px;
+    }
+
+    th, td {
+      border: 1px solid #ccc;
+      padding: 8px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #004aad;
+      color: white;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 5px;
+      margin-top: 10px;
+    }
+
+    form {
+      margin-top: 10px;
+    }
+
+    fieldset {
+      border: 1px solid #ccc;
+      margin-bottom: 15px;
+      padding: 10px;
+      border-radius: 5px;
+    }
+
+    legend {
+      font-weight: bold;
+      color: #004aad;
+    }
+
+    label {
+      display: block;
+      margin-top: 8px;
+    }
+
+    input, select {
+      width: 100%;
+      padding: 6px;
+      margin-top: 4px;
+      box-sizing: border-box;
+    }
+
+    input[type="submit"], input[type="reset"] {
+      width: auto;
+      background-color: #004aad;
+      color: white;
+      border: none;
+      padding: 8px 15px;
+      cursor: pointer;
+      margin-top: 10px;
+      border-radius: 4px;
+    }
+
+    input[type="submit"]:hover, input[type="reset"]:hover {
+      background-color: #003580;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Welcome to PLP Technologies Ltd</h1>
+    <p>We build technology that helps everyone rule their world.</p>
+  </header>
+
+  <main>
+
+    <!-- Section with a list -->
+    <section>
+      <h2>Our Focus Areas</h2>
+      <ul>
+        <li>Pattern Recognition & Sequences</li>
+        <li>Deductive & Analytical Reasoning</li>
+        <li>Word Problems & Lateral Thinking</li>
+      </ul>
+    </section>
+
+    <!-- Section with a table -->
+    <section>
+      <h2>Internship Skills Table</h2>
+      <table>
+        <tr>
+          <th>Skill</th>
+          <th>Level</th>
+        </tr>
+        <tr>
+          <td>HTML</td>
+          <td>Beginner</td>
+        </tr>
+        <tr>
+          <td>JavaScript</td>
+          <td>Beginner</td>
+        </tr>
+        <tr>
+          <td>Python</td>
+          <td>Intermediate</td>
+        </tr>
+      </table>
+    </section>
+
+    <!-- Section with media -->
+    <section>
+      <h2>Life at PLP</h2>
+      <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=800" alt="Team working together in an office">
+      <p>Our team collaborating on innovative projects.</p>
+    </section>
+
+    <!-- HTML5 Form -->
+    <section>
+      <h2>Internship Application Form</h2>
+      <form action="#" method="post">
+
+        <fieldset>
+          <legend>Personal Information</legend>
+          
+          <label for="fname">First Name:</label>
+          <input type="text" id="fname" name="fname" required minlength="2">
+
+          <label for="lname">Last Name:</label>
+          <input type="text" id="lname" name="lname" required minlength="2">
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required placeholder="you@example.com">
+
+          <label for="phone">Phone:</label>
+          <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="10-digit number">
+        </fieldset>
+
+        <fieldset>
+          <legend>Education</legend>
+          <label for="education">Education Level:</label>
+          <select id="education" name="education" required>
+            <option value="">Select one</option>
+            <option>High School</option>
+            <option>Diploma</option>
+            <option>Bachelor's</option>
+            <option>Master's</option>
+          </select>
+        </fieldset>
+
+        <fieldset>
+          <legend>Other Details</legend>
+          <label for="portfolio">Portfolio URL:</label>
+          <input type="url" id="portfolio" name="portfolio" placeholder="https://example.com">
+
+          <label>Skills:</label>
+          <input type="checkbox" id="html" name="skills" value="HTML">
+          <label for="html">HTML</label>
+          <input type="checkbox" id="js" name="skills" value="JavaScript">
+          <label for="js">JavaScript</label>
+          <input type="checkbox" id="python" name="skills" value="Python">
+          <label for="python">Python</label>
+        </fieldset>
+
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+
+      </form>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2025 PLP   Technologies Ltd</p>
+  </footer>
+
+</body>
+</html>
